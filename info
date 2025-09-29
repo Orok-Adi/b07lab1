@@ -1,3 +1,4 @@
+Lab 1:
 Develop class Polynomial as follows:
 i. It has one field representing the coefficients of the polynomial using an array of
 double. A polynomial is assumed to have the form 𝑎 ! + 𝑎" 𝑥 " + ⋯ + 𝑎 #$" 𝑥 #$" .
@@ -16,3 +17,25 @@ be 3.
 vi. It has a method named hasRoot that takes one argument of type double and
 determines whether this value is a root of the polynomial or not. Note that a root
 is a value of x for which the polynomial evaluates to zero.
+
+Lab 2:
+Modify Polynomial.java as follows:
+a. Replace the array representing the coefficients by two arrays: one representing the non-
+zero coefficients (of type double) and another one representing the corresponding
+exponents (of type int). For example, the polynomial 6 − 2𝑥 + 5𝑥 ! would be represented
+using the arrays [6, -2, 5] and [0, 1, 3]
+b. Update the existing methods accordingly
+c. Add a method named multiply that takes one argument of type Polynomial and returns
+the polynomial resulting from multiplying the calling object and the argument. The
+resulting polynomial should not contain redundant exponents.
+d. Add a constructor that takes one argument of type File and initializes the polynomial
+based on the contents of the file. You can assume that the file contains one line with no
+Fall 2025
+whitespaces representing a valid polynomial. For example: the line 5-3x2+7x8
+corresponds to the polynomial 5 − 3𝑥 " + 7𝑥 #
+Hint: you might want to use the following methods: split of the String class, parseInt of
+the Integer class, and parseDouble of the Double class
+e. Add a method named saveToFile that takes one argument of type String representing a
+file name and saves the polynomial in textual format in the corresponding file (similar to
+the format used in part d)
+f. You can add any supplementary classes/methods you might find useful
